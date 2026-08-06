@@ -1,12 +1,15 @@
 # Prafful Kumar Singh — Portfolio
 
-Senior Software Engineer (Full Stack) portfolio site.
-
 **Live:** https://praffulperplex.github.io
 
-## Stack
+Senior Software Engineer (Full Stack) portfolio — Vite · React 19 · TypeScript · CSS.
 
-Vite · React 19 · TypeScript · CSS (no UI kit)
+## Branches
+
+| Branch | Purpose |
+|--------|---------|
+| `source` | Full Vite/React source (edit here) |
+| `main` | Built static site served by GitHub Pages |
 
 ## Run locally
 
@@ -15,15 +18,12 @@ npm install
 npm run dev
 ```
 
+Edit copy in [`src/data/content.ts`](src/data/content.ts). Replace [`public/resume.pdf`](public/resume.pdf) to refresh the downloadable resume.
+
+## Publish
+
 ```bash
-npm run build
-npm run preview
+npm run publish:site
 ```
 
-## Edit content
-
-Update copy in [`src/data/content.ts`](src/data/content.ts). Replace [`public/resume.pdf`](public/resume.pdf) to refresh the downloadable resume.
-
-## Deploy
-
-Pushes to `main` build and publish via GitHub Actions to GitHub Pages.
+This builds and force-pushes `dist/` to `main` on `praffulperplex.github.io`.
